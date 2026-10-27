@@ -3,6 +3,7 @@
   <title>Portfolio Page</title>
   <meta charset = "UTF-8">
   <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <link rel="stylesheet" href="style.css">
   <script scr = "https://cdn.jsdelivr.net/npm/chart.js@4"> </script>
   <style>
     .chart-container {
@@ -22,10 +23,14 @@
 <body>
   <h1 style="text-align:left;">Malayka Mudassar</h1>
   <h3 style="text-align:left;"> mathematics & digital and data studies student </h3>
-  <div style="text-align:center;" class = "image">
-    <img scr = "https://images.trvl-media.com/place/502071/db50c0ed-a120-47af-b64b-066bb1434b10.jpg">
-
-  </div>
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+    </div>
+  </nav>
+  
 
   <div class = "chart-container">
     <canvas id = chart> </canvas>
