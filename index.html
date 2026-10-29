@@ -80,18 +80,19 @@
     .about-container {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 50px;
+      gap: 40px;
 }
     .about-text {
-      flex: 1;
-      font-size: 20px;
-      line-height: 1.8;
+      flex: 0 1 auto;
+}
+    .about-text p {
+      white-space: nowrap;
 }
     .about-image {
       width: 200px;
       height: auto;
       border-radius: 10px;
+      flex-shrink: 0;
 }
     footer {
       display: flex;
@@ -132,14 +133,17 @@
       <a href="#projects">projects</a>
     </div>
   </nav>
-<section 
-  id="about">
+<section id="about">
     <h2>about me</h2>
-    <p>undergraduate student studying mathematics and digital & data studies with a strong interest in 
-    <p>data science, analytics, and technology-driven problem solving. through academic and project experience,</p>
-    <p>i've developed skills in python, R, SQL, data analysis, visualization, agentic AI, </p>
-    <p>machine learning, geospatial analysis, and workflow automation. </p>
-    <img src="https://i.pinimg.com/736x/bc/3c/8a/bc3c8af7757c8781085fdaf0552d2fae.jpg" width = "200">
+    <div class = "about-container">
+      <div class = "about-text">
+        <p>undergraduate student studying mathematics and digital & data studies with a strong interest in 
+        <p>data science, analytics, and technology-driven problem solving. through academic and project experience,</p>
+        <p>i've developed skills in python, R, SQL, data analysis, visualization, agentic AI, </p>
+        <p>machine learning, geospatial analysis, and workflow automation. </p>
+      </div>
+      <img src="https://i.pinimg.com/736x/bc/3c/8a/bc3c8af7757c8781085fdaf0552d2fae.jpg" width = "200">
+    </div>
 </section>
   
   <section id="skills">
