@@ -38,6 +38,39 @@
       box-sizing: border-box;}
     .nav-links a {
       font-size: 20px;}
+    .math-symbols {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+    .math-symbols span {
+      position: absolute;
+      font-size: 45px;
+      color: rgba(197, 163, 255, 0.15);
+
+      animation: float 6s ease-in-out infinite;}
+    .math-symbols span:nth-child(1) {
+      top: 15%;
+      left: 10%;
+    }
+    .math-symbols span:nth-child(2) {
+      top: 35%;
+      right: 15%;}
+    .math-symbols span:nth-child(3) {
+      top: 65%;
+      left: 20%;
+}
+    .math-symbols span:nth-child(4) {
+      top: 80%;
+      right: 25%;
+}
+    .math-symbols span:nth-child(5) {
+      top: 50%;
+      left: 50%;
+}
+
+
     .footer {
         display: flex;
       justify-content: flex-end;
@@ -81,6 +114,13 @@
   <section id="projects">
     <h2>projects</h2>
   </section>
+  <div class="math-symbols">
+    <span>π</span>
+    <span>∑</span>
+    <span>∞</span>
+    <span>√</span>
+    <span>∫</span>
+</div>
 
 
   <div class = "chart-container">
