@@ -184,16 +184,6 @@
 
 
   <script>
-    const projectData = {
-      labels: ['Python','R','GIS','SQL','Machine Learning'],
-      datasets: [{
-        label: 'Number of Projects',
-        data: [6, 4, 3, 3, 5, 2],
-        backgroundColor: ['#001F54', '#FFB7E1', '#B388EB', '#FF69B4', '#4169E1', '#7B2CBF' ],
-        borderWidth: 0,
-        hoverOffset: 15
-    }]
-};
     const projectConfig = {
       type: 'doughnut',
       data: projectData,
@@ -207,13 +197,17 @@
               color: '#001F54',
               font: {
                 size: 14
-                    },
+                        },
               padding: 20
+                    }
                 }
-            },}}};
+            }
+        }
+    };
     new Chart(
       document.getElementById('projectChart'),
-      projectConfig);
+      projectConfig
+    );
 
   </script>
 
