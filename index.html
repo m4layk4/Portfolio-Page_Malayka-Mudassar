@@ -10,7 +10,16 @@
     .chart-container {
       width:90%;
       max-width: 800px
-      margin: 50px auto;}
+      margin: 50px auto;
+      text-align: center;
+}
+
+.chart-container h3 {
+    color: #001F54;
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 8px rgba(255, 183, 225, 0.5);
+}
 
     body {
       background-color: #B9BBB6;
@@ -152,6 +161,10 @@
   
   <section id="skills">
     <h2>skills</h2>
+    <div class="chart-container">
+      <h3>technologies used in my projects</h3>
+      <canvas id="projectChart"></canvas>
+</div>
   </section>
   <section id="projects">
     <h2>projects</h2>
@@ -176,6 +189,50 @@
 
 
   <script>
+    const projectData = {
+      labels: [
+        'Python',
+        'R',
+        'GIS',
+        'SQL',
+        'Data Analytics',
+        'Machine Learning'],
+      datasets: [{
+        label: 'Number of Projects',
+        data: [6, 4, 3, 3, 5, 2],
+        backgroundColor: [
+            '#001F54', 
+            '#FFB7E1', 
+            '#B388EB', 
+            '#FF69B4', 
+            '#4169E1', 
+            '#7B2CBF' 
+        ],
+        borderWidth: 0,
+        hoverOffset: 15
+    }]
+};
+    const projectConfig = {
+      type: 'doughnut',
+      data: projectData,
+      options: {
+        responsive: true,
+        cutout: '65%',
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              color: '#001F54',
+              font: {
+                size: 14
+                    },
+              padding: 20
+                }
+            },}}};
+    new Chart(
+      document.getElementById('projectChart'),
+      projectConfig);
+
   </script>
 
 
